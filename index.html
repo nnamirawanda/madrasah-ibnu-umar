@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan Madrasah Ibnu Umar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: 'Poppins',
+                    montserrat: 'Montserrat'
+                },
+                extend: {
+                    colors: {
+                        primary: {
+                            '900': '#368322',
+                            '800': '#4A9039',
+                            '700': '#5E9C4E',
+                            '600': '#73A865',
+                            '500': '#86B57A',
+                            '400': '#9AC190',
+                            '300': '#AFCDA7',
+                            '200': '#C3DABD',
+                            '100': '#D7E6D3',
+                            '050': '#EBF3E9',
+                        },
+                        rt: {
+                            '900': '#971B33',
+                            '800': '#A23248',
+                            '700': '#AC495C',
+                            '600': '#B66071',
+                            '500': '#C17685',
+                            '400': '#CB8D99',
+                            '300': '#D5A4AD',
+                            '200': '#E0BBC2',
+                            '100': '#EAD1D6',
+                            '050': '#F5E9EB',
+                        }
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+    <div class="hidden bg-primary-900 md:flex items-center justify-center p-3 gap-4">
+        <!-- TODO: ADD CONTACT LINK -->
+        <a href="#" class="flex items-center text-sm text-white gap-2">
+        <svg class="h-3" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M6.05785 2.47784C5.82162 1.88726 5.24963 1.5 4.61355 1.5H2.47368C1.65979 1.5 1 2.15982 1 2.97371C1 9.89181 6.60838 15.5 13.5265 15.5C14.3404 15.5 15 14.8403 15 14.0264L14.9999 11.8865C14.9999 11.2504 14.6126 10.6784 14.022 10.4422L11.9722 9.62224C11.4417 9.41004 10.8377 9.50568 10.3988 9.87146L9.86906 10.3128C9.251 10.8278 8.34221 10.7867 7.77331 10.2178L6.28217 8.72673C5.71328 8.15783 5.67228 7.24897 6.18734 6.63091L6.62863 6.10131C6.99441 5.66238 7.09002 5.05828 6.87782 4.52778L6.05785 2.47784Z"
+            stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="sr-only">Contact Us</span>
+        +62 000 0000 0000
+        </a>
+        <a href="mailto:madrasahibnuumar@gmail.com" class="flex items-center text-sm text-white gap-2">
+        <svg class="h-3" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M1.77778 2.35714L8.17778 7.5L14.2222 2.35714M15 4.24282V10.7571C15 11.7172 15.0002 12.1973 14.8306 12.564C14.6815 12.8866 14.4432 13.1488 14.1505 13.3131C13.8177 13.5 13.3825 13.5 12.5113 13.5H3.48904C2.61785 13.5 2.18193 13.5 1.84918 13.3131C1.55648 13.1488 1.31868 12.8866 1.16955 12.564C1 12.1973 1 11.7172 1 10.7571V4.24282C1 3.28273 1 2.80274 1.16955 2.43604C1.31868 2.11347 1.55648 1.8512 1.84918 1.68685C2.18193 1.5 2.61785 1.5 3.48904 1.5H12.5113C13.3825 1.5 13.8177 1.5 14.1505 1.68685C14.4432 1.8512 14.6815 2.11347 14.8306 2.43604C15.0002 2.80274 15 3.28273 15 4.24282Z"
+            stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="sr-only">Email Us</span>
+        madrasahibnuumar@gmail.com
+        </a>
+    </div>
+    <nav class="sticky top-0 z-50 bg-white border-gray-200 shadow-md">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-4 md:px-20 px-10">
+        <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="asset/app.svg" class="h-12" alt="Logo Madrasah Ibnu Umar" />
+        </a>
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+            <li>
+                <a href="./"
+                class="block rounded md:rounded-none py-2 px-3 text-white bg-primary-700 md:bg-transparent md:text-primary-900 md:p-0 border-b-primary-900 border-b-2"
+                aria-current="page">Beranda</a>
+            </li>
+            <li>
+                <a href="view/profil.html"
+                class="block rounded md:rounded-none py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0">Profil</a>
+            </li>
+            <li class="md:hidden">
+                <a href="view/program-tk.html"
+                class="block rounded md:rounded-none py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0">TK</a>
+            </li>
+            <li class="md:hidden">
+                <a href="view/program-rt.html"
+                class="block rounded md:rounded-none py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0">Rumah Tahfidz</a>
+            </li>
+            <li class="md:hidden">
+                <a
+                class="block rounded md:rounded-none py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0">Kajian</a>
+            </li>
+            <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="hidden md:flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 md:w-auto">Program
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                    <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100">TK</a>
+                    </li>
+                    <li>
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100">Rumah Tahfidz</a>
+                    </li>
+                    <li>
+                    <a class="block px-4 py-2 hover:bg-gray-100">Lembaga Kajian</a>
+                    </li>
+                </ul>
+                </div>
+            </li>
+    
+            <li>
+                <a
+                class="block rounded md:rounded-none py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0">Informasi</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="pointer-events-none select-none">
+        <header class="bg-left bg-no-repeat bg-cover" style="background-image: url('asset/landing__jumbotron-img.png');">
+        <div class="md:px-20 px-10 py-24 sm:w-4/5 md:w-3/5 lg:w-1/2">
+            <h1 class="mb-4 text-4xl lg:text-5xl text-primary-900 font-medium">Yayasan Madrasah Ibnu Umar</h1>
+            <p class="mb-8 text-lg font-montserrat text-gray-500">Yayasan Madrasah Ibnu Umar merupakan Yayasan yang
+            berfokus pada Pendidikan, Dakwah Islam dan Sosial untuk mewujudkan generasi Qur’ani yang cerdas,
+            berakhlak
+            mulia, dan peduli kepada sesama.</p>
+            <a href="#"
+            class="px-5 py-3 border-[1.5px] font-medium font-montserrat border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white pointer-events-auto">
+            Selengkapnya
+            </a>
+        </div>
+        </header>
+        <section class="bg-white">
+        <div class="p-20 mx-auto text-center">
+            <dl class="grid gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-4">
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl text-primary-900 font-semibold">300+</dt>
+                <dd class="font-medium font-montserrat text-gray-500">Peserta Didik</dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl text-primary-900 font-semibold">10</dt>
+                <dd class="font-medium font-montserrat text-gray-500">Ruang Belajar</dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl text-primary-900 font-semibold">42</dt>
+                <dd class="font-medium font-montserrat text-gray-500">Pengajar Aktif</dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <dt class="mb-2 text-3xl md:text-4xl text-primary-900 font-semibold">100+</dt>
+                <dd class="font-medium font-montserrat text-gray-500">Alumni</dd>
+            </div>
+            </dl>
+        </div>
+        </section>
+        <section class="bg-white">
+        <div class="flex flex-col lg:flex-row justify-between lg:items-end gap-4 md:px-20 px-10 py-10">
+            <h1 class="flex flex-col gap-1 text-primary-900 text-2xl font-medium">
+            <span class="text-yellow-500">Lembaga</span>
+            Pendidikan Generasi Qur’ani
+            </h1>
+            <p class="lg:w-1/2 lg:text-right">
+            Berfokus pada pembinaan generasi Qur'ani, membina karakter, dan memperkuat pemahaman keislaman.
+            </p>
+        </div>
+        <dl class="grid gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 md:px-20 px-10 py-10">
+            <div class="flex flex-col items-center justify-center">
+            <dt class="mb-4">
+                <img src="asset/lembaga__TK-logo.png" class="h-25">
+            </dt>
+            <dd class="font-medium text-center font-montserrat text-gray-900">
+                TK Islam Tahfidz
+                Imam Asy-Syafi’i
+            </dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+            <dt class="mb-4">
+                <img src="asset/lembaga__RT-logo.png" class="h-25">
+            </dt>
+            <dd class="font-medium text-center font-montserrat text-gray-900">
+                Rumah Tahfidz
+                Riyadhul Qur’an
+            </dd>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+            <dt class="mb-4">
+                <img src="asset/lembaga__kajian-logo.png" class="h-25">
+            </dt>
+            <dd class="font-medium text-center font-montserrat text-gray-900">
+                Lembaga Kajian
+                Islam Ibnu Abbas
+            </dd>
+            </div>
+        </dl>
+        </section>
+        <section class="bg-white">
+        <div class="flex flex-col gap-8 py-10 md:px-20 px-10">
+            <h1 class="text-primary-900 text-2xl font-medium">Video Profil</h1>
+            <video class="rounded-3xl" controls>
+            <!-- TODO: Update 'Video Profil' with video src -->
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        </section>
+    </main>
+    <footer class="bg-white">
+        <div class="w-full md:px-20 px-10 py-10 flex flex-col gap-5">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+            <a href="" class="flex items-center">
+                <span class="self-center text-2xl font-semibold">
+                    Yayasan Madrasah
+                    <br class="hidden md:block">
+                    Ibnu Umar
+                </span>
+            </a>
+            </div>
+            <div>
+            <p class="font-semibold md:text-right text-gray-900 uppercase">
+                Hubungi kami untuk
+                <br class="hidden md:block">
+                informasi lebih lanjut
+            </p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+            <a href="https://maps.app.goo.gl/S3EffVZYGAPZPFvf6" class="text-sm text-gray-500">Jl. Kemang Blok Saudara
+            No.70, Sukatani,<br>Kec. Tapos, Kota Depok, Jawa Barat 16454
+            </a>
+            <div class="flex gap-4">
+            <a href="#" class="text-gray-500 hover:text-gray-900">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.16658 14.2502L13.9241 11.5002L9.16658 8.75016V14.2502ZM19.7633 7.07266C19.8824 7.5035 19.9649 8.081 20.0199 8.81433C20.0841 9.54766 20.1116 10.1802 20.1116 10.7302L20.1666 11.5002C20.1666 13.5077 20.0199 14.9835 19.7633 15.9277C19.5341 16.7527 19.0024 17.2843 18.1774 17.5135C17.7466 17.6327 16.9583 17.7152 15.7483 17.7702C14.5566 17.8343 13.4658 17.8618 12.4574 17.8618L10.9999 17.9168C7.15908 17.9168 4.76659 17.7702 3.82242 17.5135C2.99742 17.2843 2.46575 16.7527 2.23659 15.9277C2.11742 15.4968 2.03492 14.9193 1.97992 14.186C1.91575 13.4527 1.88825 12.8202 1.88825 12.2702L1.83325 11.5002C1.83325 9.49266 1.97992 8.01683 2.23659 7.07266C2.46575 6.24766 2.99742 5.716 3.82242 5.48683C4.25325 5.36766 5.04159 5.28516 6.25159 5.23016C7.44325 5.166 8.53408 5.1385 9.54242 5.1385L10.9999 5.0835C14.8408 5.0835 17.2333 5.23016 18.1774 5.48683C19.0024 5.716 19.5341 6.24766 19.7633 7.07266Z">
+                </svg>
+                <span class="sr-only">Youtube Page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.9423 2.3335C12.9735 2.33625 13.497 2.34175 13.9489 2.35458L14.1267 2.361C14.332 2.36833 14.5346 2.3775 14.7794 2.3885C15.7547 2.43433 16.4202 2.58833 17.0041 2.81475C17.6091 3.04758 18.1188 3.36291 18.6285 3.87166C19.0948 4.32975 19.4555 4.8841 19.6854 5.496C19.9118 6.07991 20.0658 6.74541 20.1116 7.72166C20.1226 7.9655 20.1318 8.16808 20.1391 8.37433L20.1446 8.55216C20.1584 9.00316 20.1639 9.52658 20.1657 10.5578L20.1666 11.2417V12.4425C20.1688 13.1111 20.1618 13.7797 20.1455 14.4482L20.14 14.626C20.1327 14.8322 20.1235 15.0348 20.1125 15.2787C20.0667 16.2549 19.9109 16.9195 19.6854 17.5043C19.4555 18.1162 19.0948 18.6706 18.6285 19.1287C18.1704 19.595 17.616 19.9557 17.0041 20.1856C16.4202 20.412 15.7547 20.566 14.7794 20.6118L14.1267 20.6393L13.9489 20.6448C13.497 20.6577 12.9735 20.6641 11.9423 20.6659L11.2585 20.6668H10.0585C9.38961 20.6692 8.72068 20.6622 8.05195 20.6457L7.87412 20.6402C7.65651 20.632 7.43895 20.6225 7.22145 20.6118C6.24612 20.566 5.58062 20.412 4.99578 20.1856C4.38421 19.9555 3.83019 19.5949 3.37237 19.1287C2.90573 18.6707 2.54472 18.1163 2.31454 17.5043C2.08812 16.9204 1.93412 16.2549 1.88829 15.2787L1.86079 14.626L1.8562 14.4482C1.8393 13.7797 1.83166 13.1111 1.83329 12.4425V10.5578C1.83075 9.88921 1.83747 9.22059 1.85345 8.55216L1.85987 8.37433C1.8672 8.16808 1.87637 7.9655 1.88737 7.72166C1.9332 6.74541 2.0872 6.08083 2.31362 5.496C2.54434 4.88384 2.90599 4.32948 3.37329 3.87166C3.83084 3.40558 4.38454 3.0449 4.99578 2.81475C5.58062 2.58833 6.2452 2.43433 7.22145 2.3885C7.46528 2.3775 7.66879 2.36833 7.87412 2.361L8.05195 2.3555C8.72038 2.33921 9.389 2.33218 10.0576 2.33441L11.9423 2.3335ZM11 6.91683C9.78438 6.91683 8.61859 7.39971 7.75905 8.25926C6.8995 9.1188 6.41662 10.2846 6.41662 11.5002C6.41662 12.7157 6.8995 13.8815 7.75905 14.7411C8.61859 15.6006 9.78438 16.0835 11 16.0835C12.2155 16.0835 13.3813 15.6006 14.2409 14.7411C15.1004 13.8815 15.5833 12.7157 15.5833 11.5002C15.5833 10.2846 15.1004 9.1188 14.2409 8.25926C13.3813 7.39971 12.2155 6.91683 11 6.91683ZM11 8.75016C11.3611 8.7501 11.7187 8.82117 12.0524 8.95932C12.386 9.09746 12.6892 9.29998 12.9446 9.5553C13.2 9.81061 13.4026 10.1137 13.5409 10.4474C13.6792 10.781 13.7503 11.1386 13.7504 11.4997C13.7505 11.8608 13.6794 12.2185 13.5413 12.5521C13.4031 12.8858 13.2006 13.189 12.9453 13.4444C12.69 13.6998 12.3868 13.9024 12.0532 14.0407C11.7196 14.1789 11.362 14.2501 11.0009 14.2502C10.2715 14.2502 9.57205 13.9604 9.05632 13.4447C8.5406 12.929 8.25087 12.2295 8.25087 11.5002C8.25087 10.7708 8.5406 10.0713 9.05632 9.55562C9.57205 9.03989 10.2715 8.75016 11.0009 8.75016M15.8134 5.54183C15.5095 5.54183 15.218 5.66255 15.0031 5.87744C14.7883 6.09232 14.6675 6.38377 14.6675 6.68766C14.6675 6.99156 14.7883 7.283 15.0031 7.49789C15.218 7.71277 15.5095 7.8335 15.8134 7.8335C16.1173 7.8335 16.4087 7.71277 16.6236 7.49789C16.8385 7.283 16.9592 6.99156 16.9592 6.68766C16.9592 6.38377 16.8385 6.09232 16.6236 5.87744C16.4087 5.66255 16.1173 5.54183 15.8134 5.54183Z">
+                </svg>
+                <span class="sr-only">Instagram Page</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-900">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.1666 11.5002C20.1666 6.44016 16.0599 2.3335 10.9999 2.3335C5.93992 2.3335 1.83325 6.44016 1.83325 11.5002C1.83325 15.9368 4.98659 19.631 9.16658 20.4835V14.2502H7.33325V11.5002H9.16658V9.2085C9.16658 7.43933 10.6058 6.00016 12.3749 6.00016H14.6666V8.75016H12.8333C12.3291 8.75016 11.9166 9.16266 11.9166 9.66683V11.5002H14.6666V14.2502H11.9166V20.621C16.5458 20.1627 20.1666 16.2577 20.1666 11.5002Z">
+                </svg>
+                <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="mailto:madrasahibnuumar@gmail.com" class="text-gray-500 hover:text-gray-900">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.3333 4.1665H3.66659C2.65825 4.1665 1.84242 4.9915 1.84242 5.99984L1.83325 16.9998C1.83325 18.0082 2.65825 18.8332 3.66659 18.8332H18.3333C19.3416 18.8332 20.1666 18.0082 20.1666 16.9998V5.99984C20.1666 4.9915 19.3416 4.1665 18.3333 4.1665ZM17.9666 8.06234L11.4858 12.114C11.1924 12.2973 10.8074 12.2973 10.5141 12.114L4.03325 8.06234C3.94134 8.01074 3.86084 7.94103 3.79665 7.85742C3.73246 7.77381 3.68589 7.67805 3.65978 7.57593C3.63367 7.4738 3.62855 7.36744 3.64473 7.26329C3.66091 7.15913 3.69806 7.05933 3.75393 6.96995C3.80979 6.88056 3.88322 6.80344 3.96975 6.74325C4.05629 6.68306 4.15413 6.64106 4.25737 6.61978C4.36061 6.5985 4.46709 6.59839 4.57038 6.61946C4.67366 6.64052 4.77159 6.68233 4.85825 6.74234L10.9999 10.5832L17.1416 6.74234C17.2282 6.68233 17.3262 6.64052 17.4295 6.61946C17.5327 6.59839 17.6392 6.5985 17.7425 6.61978C17.8457 6.64106 17.9436 6.68306 18.0301 6.74325C18.1166 6.80344 18.19 6.88056 18.2459 6.96995C18.3018 7.05933 18.3389 7.15913 18.3551 7.26329C18.3713 7.36744 18.3662 7.4738 18.3401 7.57593C18.3139 7.67805 18.2674 7.77381 18.2032 7.85742C18.139 7.94103 18.0585 8.01074 17.9666 8.06234Z">
+                </svg>
+                <span class="sr-only">Email Us</span>
+            </a>
+            </div>
+        </div>
+        <hr class="border-gray-900">
+        <div class="sm:flex sm:items-center sm:justify-between pointer-events-none select-none">
+            <span class="text-sm text-gray-500 sm:text-center">© 2024 Yayasan Madrasah Ibnu Umar
+            </span>
+            <span class="text-sm text-gray-500 sm:text-center">All rights reserved
+            </span>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
